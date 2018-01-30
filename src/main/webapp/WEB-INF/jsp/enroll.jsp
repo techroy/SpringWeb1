@@ -19,31 +19,32 @@
 
 			<tr>
 				<td>Enter Name:</td>
-				<td><form:input type="text" path="name" /></td>
+				<td><form:input type="text" path="name" /><form:errors path="name"/>
+				</td>
 			</tr>
 			<tr>
 				<td>Enter Qualification:</td>
 				<td><form:select path="qualification" items="${qualifications}">
-					</form:select></td>
+					</form:select><form:errors path="qualification"/></td>
 			</tr>
 			<tr>
 				<td>Enter Gender:</td>
 				<td><form:radiobutton path="gender" value="Male" />Male<form:radiobutton
-						path="gender" value="Female" />Female</td>
+						path="gender" value="Female" />Female&nbsp;<form:errors path="gender"/></td>
 			</tr>
 			<tr>
 				<td>Enter Address:</td>
-				<td><form:input type="text" path="address" /></td>
+				<td><form:input type="text" path="address" /><form:errors path="address"/></td>
 			</tr>
 			
 			<tr>
 				<td>Enter Course Name:</td>
-				<td><form:input type="text" path="course" /></td>
+				<td><form:input type="text" path="course" /><form:errors path="course"/></td>
 			</tr>
 			
 			<tr>
 				<td>Enter Duration:</td>
-				<td><form:input type="text" path="duration" /></td>
+				<td><form:input type="text" path="duration" /><form:errors path="duration"/></td>
 			</tr>
 			
 			<tr>
